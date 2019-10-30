@@ -1,0 +1,126 @@
+.list .inputarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.list .inputarea .label {
+  display: block;
+  margin-bottom: 5px;
+  color: #848991;
+  font-weight: 600;
+}
+
+.list .inputarea__select {
+  position: relative;
+  height: 35px;
+  border: 1px solid #848991;
+}
+
+.list .inputarea__select:after {
+  position: absolute;
+  font-family: 'iconfont';
+  content: '\e90a';
+  right: 10px;
+  top: 2px;
+  font-size: 20px;
+  color: #848991;
+}
+
+.list .inputarea__select select {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  background: none;
+  color: #848991;
+}
+
+.list .inputarea__text input {
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  background: none;
+  border: 1px solid #848991;
+  padding: 5px 8px;
+  color: #848991;
+}
+
+.btnarea {
+  clear: both;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btnarea a[class^="btn"] {
+  display: inline-block;
+  min-width: 80px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.btnarea a[class^="btn"] + a[class^="btn"] {
+  margin-left: 10px;
+}
+
+.btnarea .btn__search {
+  color: #ffffff;
+}
+
+.btnarea .btn__search {
+  background: #127AB9;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.btnarea .btn__big {
+  width: 100%;
+  height: 35px;
+}
+
+.btnarea .btn__small {
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #127AB9;
+  font-weight: normal;
+  color: #127AB9;
+}
+
+.btnarea .btn__primary {
+  color: #ffffff;
+  font-weight: 500;
+  background: #127AB9;
+}
+
+.btnarea .btn__text {
+  background: none;
+  font-weight: 500;
+  color: #A40A0A;
+}
+
+.w50 {
+  display: inline-block;
+  width: 207px !important;
+  padding-right: 10px;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.align__center {
+  text-align: center;
+}
+
+.align__right {
+  text-align: right;
+}
+
+.align__left {
+  text-align: left;
+}
+/*# sourceMappingURL=common.css.map */

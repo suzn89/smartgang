@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>웹퍼블리싱 가이드 - 강WON도 통합풀렛풤</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+html, body, p {margin:0; padding:0}
+body, td {font-size:1em; font-family:'Noto Sans KR','맑은 고딕','malgun gothic', dotum, '돋움', Sans-Serif; font-weight:normal; color:#000}
+h1,h2,h3,h4,h5,h6,th,td,a {font-weight:normal}
+table {border-collapse: collapse; border-spacing:0}
+#g_header {padding:23px 20px; height:90px; background:#3d429c; box-sizing:border-box}
+#g_header h1 {max-width:1240px; margin:0 auto; font-size:2.3em; font-weight:600; line-height:1em; color:#fff; text-shadow:0 0 0 rgba(0, 32, 44, 1), 0 0 3px rgba(0, 32, 44, 1)}
+#g_body {position:relative; max-width:1240px; margin:0 auto; padding:0 20px}
+#g_footer {padding:24px 20px; background:#f6f6f6; box-sizing:border-box; text-align: center;}
+#g_footer span {display:block; max-width:1240px; margin:0 auto; font-size:10px}
+.contents h2 {margin:50px 0 5px; padding:8px 0; border-top:3px dashed #999; border-bottom:3px dashed #999; font-size:1.6em; font-weight:bold}
+.note_box {max-width:1240px; margin:0 auto 15px; padding:15px; background:#f4f4f8; line-height:1.4em}
+.guide_table {width:100%; margin-bottom:80px; border-bottom:2px solid #c5c5c5}
+.guide_table thead th {text-align:left; padding:6px 2px; border-bottom:2px solid #2e3543; border-right:1px solid #2e3543; border-left:1px solid #2e3543; background:#292929; font-weight:500; color:#fff}
+.guide_table tbody tr:hover {background:#efefef}
+.guide_table tbody td {text-align:left; padding:5px 2px; font-size:.9em; border-bottom:1px solid #ccc}
+.guide_table .no {padding-right:5px; text-align:center}
+.count_bar {float:right; margin-top:8px; font-size:.6em; font-weight:normal; color:#666}
+.btn_area {max-width:1240px; margin:0 auto; padding:0 0 30px; text-align:right; margin-top:-50px}
+.btn_top {display:inline-block; box-sizing:border-box; width:40px; height:40px; line-height:40px; text-align:center; background:#292929; color:#fff; text-decoration:none}
+@media screen and (max-width:767px) {
+	body, td, .guide_table thead th {font-size:.9em}
+	#g_header {padding:20px 15px}
+	#g_header h1 {font-size:1.6em; line-height:1.3em}
+	#g_header {height:auto}
+	#g_body {padding:0 5px}
+	.contents {margin:0}
+	.contents h2 {font-size:1.3em; margin-top:20px; padding:4px 0; border-top:2px dotted #666; border-bottom:2px dotted #666}
+	.guide_table {margin-bottom:40px}
+	.note_box {padding:10px}
+	.btn_area {margin-top:-10px}
+	.hidden-phone {display: none !important}
+	.t_center {text-align:center !important}
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+ $(document).ready(function() {
+	var guideTable = $(".guide_table"),
+		len = 0,
+		idx = 0;
+
+	guideTable.each(function(i){
+
+		len = $(this).find("td.no").length;
+		$(this).prev().find(".page_total").text(len);
+		$(this).find("td.no").each(function(n){
+			$(this).text(n + 1);
+		});
+
+	});
+
+	guideTable.find("tbody tr").each(function(){
+
+		var idx = $(this).parents(".guide_table").find("thead th.condition").index(),
+			$this = $(this).find("td").eq(idx),
+			condition = $this.text();
+
+		switch(condition){
+
+			case "작업중":
+
+				$this.css("color","green");
+
+				break;
+
+			case "완료":
+
+				$this.css("font-weight", "bold");
+
+			default:
+				break;
+		}
+
+	});
+
+	
+
+	var $pageTotal =($('table.guide_table tbody tr').length)-1;
+	var $count_total =(($('table.guide_table tbody tr').find('td:eq("4")').children('a')).length)+1;
+	var $pagePercent =(($count_total/$pageTotal)*100).toFixed(2)+'%';
+ });
+//]]>
+</script>
+</head>
+<body>
+
+<div id="g_header">
+	<h1>강WON도 통합풀렛풤 - 웹퍼블리싱 가이드</h1>
+</div>
+
+<div id="g_body">
+	<div class="contents">
+
+		<!-- PC버전일경우 -->
+		<div class="note_box">
+			<p>모듈형태로 구성되어 클래스 변경적용하여 사용이 가능합니다.</p>
+			<p>CSS의 경우 SCSS로 작성되어 컴파일 되었으니, CSS 변경시 원본 변경이 함께 필요 합니다.</p>
+			<ul>
+				<li>스타일에 맞는 클래스를 사용해 주세요</li>
+				<li>최저해상도는 FHD 기준이며, 4K까지 대응합니다</li>
+			</ul>
+		</div>
+		<h2>◈ PC 디자인 <span class="count_bar">- TOTAL <span class="page_total"></span></h2>
+		<table class="guide_table" summary=" 코딩가이드 상세내용" id="guide_table">
+			<colgroup>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col" class="no hidden-phone">NO</th>
+				<th scope="col">1depth</th>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col" class="t_center">퍼블리싱 보기</th>
+				<th scope="col" class="hidden-phone condition">상태</th>
+				<th scope="col" class="hidden-phone">비고</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>스타일가이드(공통)</td>
+					<td></td>
+					<td></td>
+					<td class="filelink"><a href="/guide.html" title="새창열림" target="_blank">guide.html</a></td>
+					<td class="hidden-phone">작업중</td>
+					<td class="hidden-phone"></td>
+				</tr>
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>레이아웃(대시보드공통)</td>
+					<td></td>
+					<td></td>
+					<td class="filelink"><a href="/layout.html" title="새창열림" target="_blank">layout.html</a></td>
+					<td class="hidden-phone">작업중</td>
+					<td class="hidden-phone"></td>
+				</tr>
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td class="filelink"><a href="/login.html" title="새창열림" target="_blank">login.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone"></td>
+				</tr>
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>사용자관리</td>
+					<td>목록</td>
+					<td class="filelink"><a href="/user_list.html" title="새창열림" target="_blank">user_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">레이어팝업으로 등록/수정/상세보기</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>권한관리</td>
+					<td>목록</td>
+					<td class="filelink"><a href="/manage_list.html" title="새창열림" target="_blank">manage_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">레이어팝업으로 등록/수정/상세보기</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>카메라관리</td>
+					<td>중계서버 카메라 관리 - 목록</td>
+					<td class="filelink"><a href="/camera_list.html" title="새창열림" target="_blank">camera_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 등록/수정/상세보기<br>- 엑셀업로드 버튼</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>카메라관리</td>
+					<td>시도별 카메라 동기화 설정 - 목록</td>
+					<td class="filelink"><a href="/sidocamera_list.html" title="새창열림" target="_blank">sidocamera_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 등록/수정/상세보기</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>카메라관리</td>
+					<td>시도별 카메라 동기화 설정 - 목록</td>
+					<td class="filelink"><a href="/sidocamera_list.html" title="새창열림" target="_blank">sidocamera_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 등록/수정/상세보기</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>선택옵션</td>
+					<td>엑셀업로드</td>
+					<td class="filelink"><a href="/choose_list.html" title="새창열림" target="_blank">choose_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 파일 업로드 화면</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>선택옵션</td>
+					<td>엑셀업로드</td>
+					<td class="filelink"><a href="/choose_list.html" title="새창열림" target="_blank">choose_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 파일 업로드 화면</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>중계서버설정</td>
+					<td>목록</td>
+					<td class="filelink"><a href="/server_list.html" title="새창열림" target="_blank">server_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 중계서버 설정 팝업</td>
+				</tr>		
+				<tr>
+					<td class="no hidden-phone"><!-- 번호 --></td>
+					<td>설정</td>
+					<td>마커정보</td>
+					<td>목록</td>
+					<td class="filelink"><a href="/marker_list.html" title="새창열림" target="_blank">marker_list.html</a></td>
+					<td class="hidden-phone"></td>
+					<td class="hidden-phone">- 레이어팝업으로 등록/수정</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- /PC버전일경우 -->
+
+	</div>
+	<div class="btn_area">
+		<a href="#top" class="btn_top" title="상단으로 이동">TOP</a>
+	</div>
+</div>
+<div id="g_footer">
+	<span>&copy; 2019 Kimsujeong All Rights Reserved.</span>
+</div>
+</body>
+</html>
