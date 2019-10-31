@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <h1 class="menu__logo"><a href="#"><img src="images/logo_top.png" alt=""></a></h1> <!-- // menu__logo -->
+    <div class="menu__date">
+      <span>2019.10.10</span>
+      <span>11:02:03</span>
+    </div><!-- // menu__date -->
+    <div class="menu__nav">
+      <ul>
+        <li class="on"><a href="#">종합정보</a></li>
+        <li><a href="#">클릭강원</a></li>
+        <li><a href="#">스마트강원</a></li>
+      </ul>
+    </div> <!-- // menu_nav -->
+    <div class="menu__copy">
+      <p>ⓒ INCON.ALL RIGHTS RESERVED.</p>
+    </div>
+  </div> <!-- // menu-->
+
+  <div class="right">
+    <div class="right__header">
+      <span class="prTitle">스마트강원 통합플랫폼</span>
+      <span class="pageTitle">종합정보</span>
+
+      <ul class="topBtns">
+        <li><a href="#" class="setting"><span class="ir">설정</span></a></li>
+        <li><a href="#" class="logout"><span class="ir">로그아웃</span></a></li>
+      </ul>
+    </div> <!-- // right__header -->
+
+    <div class="right__container settings">
+      <div class="adminPage">
+        <h2 class="adminPage__title">사용자관리</h2>
+        <div class="searchBox">
+          <div class="searchBox__item">
+            <span class="title">사용자역할</span>
+            <select name="" id="" title="해당항목선택">
+              <option value="">선택 1</option>
+              <option value="">선택 2</option>
+              <option value="">선택 3</option>
+            </select>
+          </div>
+          <div class="searchBox__item">
+            <label for="text1" class="title">아이디</label>
+            <input type="text" id="text1">
+          </div>
+          <div class="searchBox__item">
+            <label for="text1" class="title">이름</label>
+            <input type="text" id="text1">
+          </div>
+          <div class="searchBox__item">
+            <a href="#" class="search">조회</a>
+          </div>
+        </div> <!-- // searchBox -->
+
+        <div class="listType">
+          <div class="btnArea pageinfo">
+            <ul>
+              <li>전체 <span class="ptcolor">55</span>건</li>
+              <li><span class="ptcolor">1</span>/ <span>5</span>페이지</li>
+            </ul>
+            <a href="#" class="btn__primary small">신규등록</a>
+            <a href="#" class="btn__cancle small">선택삭제</a>
+          </div>
+          <table class="basic_tbl_list" summary="테이블이 어떻게 구성되어있고 무엇을 보여주는지 간략한 내용, html5에서 축소된 속성임">
+            <caption>테이블제목</caption>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>              
+                <th class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox" class="ir">선택</label>
+                  </div>
+                </th>
+                <th class="ac">번호</th>
+                <th>권한</th>
+                <th>아이디</th>
+                <th>이름</th>
+                <th>연락처</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox1">
+                    <label for="checkbox1" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">1</td>
+                <td>관리자</td>
+                <td>administrator</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">2</td>
+                <td>gieladkg</td>
+                <td>hagisiro</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox1">
+                    <label for="checkbox1" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">1</td>
+                <td>관리자</td>
+                <td>administrator</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">2</td>
+                <td>gieladkg</td>
+                <td>hagisiro</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox1">
+                    <label for="checkbox1" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">1</td>
+                <td>관리자</td>
+                <td>administrator</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">2</td>
+                <td>gieladkg</td>
+                <td>hagisiro</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox1">
+                    <label for="checkbox1" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">1</td>
+                <td>관리자</td>
+                <td>administrator</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">2</td>
+                <td>gieladkg</td>
+                <td>hagisiro</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox1">
+                    <label for="checkbox1" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">1</td>
+                <td>관리자</td>
+                <td>administrator</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+              <tr>
+                <td class="ac">
+                  <div class="listCheck">
+                    <input type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2" class="ir">선택</label>
+                  </div>
+                </td>
+                <td class="ac">2</td>
+                <td>gieladkg</td>
+                <td>hagisiro</td>
+                <td>김떡순</td>                
+                <td>010-9999-8888</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pageNation">
+            <ul>
+              <li><a href="#" class="first"><span class="ir">처음으로</span></a></li>
+              <li><a href="#" class="prev"><span class="ir">이전</span></a></li>
+              <li><a href="#" class="current">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+              <li><a href="#" class="next"><span class="ir">다음</span></a></li>
+              <li><a href="#" class="end"><span class="ir">맨끝으로</span></a></li>
+            </ul>
+          </div>
+        </div> <!-- // listType -->
+
+      </div><!-- // adminPage -->
+    </div> <!-- // right__container -->
+  </div> <!-- // right -->
+
+  <!-- 레이어 팝업 시작-->
+<div class="popupWrap">
+  <div class="layerpopup style1">
+    <div class="layerpopup__top">
+      <h4>신규등록</h4>
+      <a href="#" class="popup__close">닫기</a>
+    </div>
+    <div class="layerpopup__content">
+      <div class="item">
+        <div class="input__form col2 etc_inp">
+          <label for="name" class="form_tit bullet">아이디</label>
+          <input type="text" id="name" class="idinput" style="width: 18rem;">
+          <button class="search">중복체크</button>
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">이용자이름 </label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">          
+          <label for="pwchk" class="form_tit">비밀번호</label>
+          <input type="password" id="pwchk">
+          <p class="refer">* 6자리 이상 영문 숫자 조합으로 작성하세요.</p>
+        </div>
+        <div class="input__form col2">          
+          <label for="pwchk" class="form_tit">비밀번호 확인</label>
+          <input type="password" id="pwchk">
+          <p class="refer">* 비밀번호 확인을 위해 한번 더 입력해주세요.</p>
+        </div>
+        <div class="input__form col2">          
+          <label for="pwchk" class="form_tit">비밀번호 입력</label>
+          <input type="password" id="pwchk" class="match"> <!-- 일치시 match 클래스추가-->
+          <p class="refer">* 비밀번호가 일치합니다.</p>
+        </div>
+        <div class="input__form col2">          
+          <label for="pwchk" class="form_tit">비밀번호 입력</label>
+          <input type="password" id="pwchk" class="discor"> <!-- 불일치시 discor 클래스추가-->
+          <p class="refer">* 비밀번호가 불일치합니다. 다시 입력해주세요.</p>
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">전화번호</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">휴대폰번호</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">이메일</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <label for="name" class="form_tit">소속</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input__form col2">
+          <span class="form_tit">알림 수신 여부</span>
+          <input type="radio" name="radio1" id="radio1" checked>
+          <label for="radio1">사용</label>
+          <input type="radio" name="radio1" id="radio2">
+          <label for="radio2">미사용</label>
+        </div>
+        <div class="input__form col2">
+          <span class="form_tit">알림 수단</span>
+          <input type="radio" name="radio1" id="radio1" checked>
+          <label for="radio1">SMS</label>
+          <input type="radio" name="radio1" id="radio2">
+          <label for="radio2">이메일</label>
+        </div>       
+        <div class="input__form col2">
+          <span class="form_tit">사용자권한</span>
+          <select name="" id="" title="해당항목선택">
+            <option value="">선택 1</option>
+            <option value="">선택 2</option>
+            <option value="">선택 3</option>
+          </select>   
+        </div>
+      </div> <!-- // item end -->
+      <div class="btnArea">        
+        <a href="#" class="btn__primary2">등록</a>
+        <a href="#" class="btn__cancle">취소</a>
+      </div>      
+    </div> <!-- // 팝업 컨텐츠 끝-->
+  </div>
+  <div class="mask"></div>
+</div>
+<!-- 레이어 팝업 끝-->
+  
+
+</body>
+</html>
