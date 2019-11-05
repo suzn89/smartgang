@@ -193,29 +193,59 @@ body {
   width: 6%;
 }
 
-.right__header .topBtns li {
+.right__header .topBtns > li {
+  position: relative;
   float: left;
   width: calc(50% - 1px);
   height: 100%;
   border-left: 1px solid #404345;
 }
 
-.right__header .topBtns li a {
+.right__header .topBtns > li .dropdown {
+  display: none;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  z-index: 999;
+}
+
+.right__header .topBtns > li .dropdown li {
+  background: #232729;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #404345;
+}
+
+.right__header .topBtns > li .dropdown li a {
+  padding: 0 15px;
+  color: #7a7d80;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.right__header .topBtns > li .dropdown li a:hover {
+  color: #ffffff;
+}
+
+.right__header .topBtns > li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.right__header .topBtns li a:hover {
+.right__header .topBtns > li a:hover {
   background-color: #232729;
 }
 
-.right__header .topBtns li .setting {
+.right__header .topBtns > li .setting {
   background: url(../images/setting.png) center 50% no-repeat;
   background-size: 40%;
 }
 
-.right__header .topBtns li .logout {
+.right__header .topBtns > li .logout {
   background: url(../images/logout.png) center 50% no-repeat;
   background-size: 40%;
 }
@@ -225,6 +255,7 @@ body {
   height: 94.5vh;
   min-height: calc(1080px - 5.5vh);
   overflow: hidden;
+  background: url(../images/1depth_test.png);
 }
 
 .right__container.settings {
@@ -320,7 +351,7 @@ body {
 
 .coverLayer {
   min-width: 25rem;
-  z-index: 999;
+  z-index: 995;
   background: rgba(13, 14, 14, 0.6);
 }
 
@@ -443,6 +474,12 @@ body {
 
 .coverLayer__content.tbllist table tbody tr:hover td {
   background: #006dff;
+}
+
+.coverLayer.cameraList {
+  position: absolute;
+  right: 0;
+  width: 35rem;
 }
 
 .eventBox {
