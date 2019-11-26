@@ -1,4 +1,132 @@
 @charset "UTF-8";
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/login_bg.png) center top no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login__area {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 388px;
+  height: 466px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login__bi {
+  width: 100%;
+  text-align: center;
+}
+
+.login__bi img {
+  width: 220px;
+}
+
+.login__bi p {
+  margin-top: 10px;
+  color: #636371;
+  opacity: 0.4;
+}
+
+.login__form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 388px;
+  margin-top: 32px;
+  background: rgba(34, 37, 39, 0.8);
+  border-radius: 10px;
+  padding: 52px;
+}
+
+.login__form p {
+  text-align: center;
+  font-size: 13px;
+  color: #BCBCBC;
+  margin-bottom: 18px;
+}
+
+.login__form .box_login_ipt {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login__form .box_login_ipt .i_label {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 0;
+}
+
+.box_login_ipt input[type="text"] {
+  background: url(../images/person.png) 20px 50% no-repeat;
+  background-color: rgba(128, 128, 128, 0.2);
+  background-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box_login_ipt input[type="password"] {
+  background: url(../images/lock.png) 20px 50% no-repeat;
+  background-color: rgba(128, 128, 128, 0.2);
+  background-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login__form input {
+  font-size: 14px;
+  width: 100%;
+  height: 43px;
+  background: rgba(40, 42, 52, 0.7);
+  border: none;
+  color: #636371;
+  padding-left: 50px;
+  border-radius: 4px;
+}
+
+.login__form input::-webkit-input-placeholder, .login__form input:-ms-input-placeholder, .login__form input::-ms-input-placeholder, .login__form input::-webkit-input-placeholder {
+  color: rgba(177, 177, 177, 0.7);
+}
+
+.login__form input::-webkit-input-placeholder, .login__form input:-ms-input-placeholder, .login__form input::-ms-input-placeholder, .login__form input::placeholder {
+  color: rgba(177, 177, 177, 0.7);
+}
+
+.login__form .btn_login {
+  display: block;
+  margin-top: 40px;
+}
+
+.login__form .btn_login input {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 42px;
+  background: #006DFF;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.login .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+  border-top: 1px solid #24242D;
+  color: rgba(99, 99, 113, 0.4);
+  font-weight: 300;
+}
+
 /* 전체 먹는 CSS */
 html {
   font-size: 10px;

@@ -9,7 +9,128 @@ $jaenanColor:#ff832b;
 $supportColor:#39d500;
 $btnPrimary:#6599f4;
 $btnCancle:#9fa6ad;
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/login_bg.png) center top no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
 
+.login__area {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 388px;
+  height: 466px;
+  box-sizing: border-box;
+}
+
+.login__bi {
+  width: 100%;
+  text-align: center;
+
+  img {
+    width: 220px;
+  }
+
+  p {
+    margin-top: 10px;
+    color: #636371;
+    opacity: 0.4;
+  }
+}
+
+.login__form {
+  box-sizing: border-box;
+  width: 388px;
+  margin-top: 32px;
+  background: rgba(34, 37, 39, 0.8);
+  border-radius: 10px;
+  padding: 52px;
+
+  p {
+    text-align: center;
+    font-size: 13px;
+    color: #BCBCBC;
+    margin-bottom: 18px;
+  }
+
+  .box_login_ipt {
+    position: relative;
+    margin-bottom: 20px;
+
+    .i_label {
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      font-size: 0;
+    }
+  }
+}
+
+.box_login_ipt input {
+  &[type="text"] {
+    background: url(../images/person.png) 20px 50% no-repeat;
+    background-color: rgba(128, 128, 128, 0.2);
+    background-size: 16px;
+    box-sizing: border-box;
+  }
+
+  &[type="password"] {
+    background: url(../images/lock.png) 20px 50% no-repeat;
+    background-color: rgba(128, 128, 128, 0.2);
+    background-size: 16px;
+    box-sizing: border-box;
+  }
+}
+
+.login__form {
+  input {
+    font-size: 14px;
+    width: 100%;
+    height: 43px;
+    background: rgba(40, 42, 52, 0.7);
+    border: none;
+    color: #636371;
+    padding-left: 50px;
+    border-radius: 4px;
+
+    &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder {
+      color: rgba(177, 177, 177, 0.7);
+    }
+  }
+
+  .btn_login {
+    display: block;
+    margin-top: 40px;
+
+    input {
+      display: block;
+      padding: 0;
+      width: 100%;
+      height: 42px;
+      background: #006DFF;
+      color: #ffffff;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.login .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+  border-top: 1px solid #24242D;
+  color: rgba(99, 99, 113, 0.4);
+  font-weight: 300;
+}
 
 /* 전체 먹는 CSS */
 html {
