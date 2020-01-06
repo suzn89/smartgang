@@ -1,0 +1,299 @@
+@charset "UTF-8";
+html {
+  font-size: 67.5%;
+}
+
+body {
+  padding: 15px;
+  background: #eef2f5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.windowpopup {
+  /* ie 기본 화살표 없앰 */
+}
+
+.windowpopup__content {
+  width: 100%;
+}
+
+.windowpopup .item {
+  margin-bottom: 2rem;
+}
+
+.windowpopup .input__form .form_tit {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #7d838a;
+  font-weight: 500;
+}
+
+.windowpopup .input__form .bullet:before {
+  content: '*';
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #e52121;
+  vertical-align: middle;
+}
+
+.windowpopup .input__form input[type='text'], .windowpopup .input__form input[type='password'], .windowpopup .input__form select {
+  padding: 0 1rem;
+  width: 100%;
+  height: 3.5rem;
+  border: 1px solid #c9cdd3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222222;
+}
+
+.windowpopup .input__form input[type='text']:disabled {
+  background: #eef3f5;
+  color: #bec1c7;
+}
+
+.windowpopup .input__form .refer {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: #b7bbc5;
+  letter-spacing: -0.005em;
+}
+
+.windowpopup .input__form input[type='password'].match {
+  border: 1px solid #5fb8a0;
+}
+
+.windowpopup .input__form .match + .refer {
+  color: #5fb8a0;
+}
+
+.windowpopup .input__form input[type='password'].discor {
+  position: relative;
+  padding-right: 20px;
+  border: 1px solid #f6697f;
+}
+
+.windowpopup .input__form input.withbtn {
+  width: calc(100% - 9rem) !important;
+}
+
+.windowpopup .input__form .discor + .refer {
+  color: #f6697f;
+}
+
+.windowpopup .input__form.col2 {
+  width: calc(50% - 0.8rem);
+  margin-right: 0.6rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.windowpopup .etc_inp button + input {
+  margin-top: 0.5rem;
+}
+
+.windowpopup .etc_inp input + input {
+  margin-top: 0.5rem;
+}
+
+.windowpopup .etc_inp .postnum {
+  width: 12rem !important;
+}
+
+.windowpopup .etc_inp .search {
+  display: inline-block;
+  min-width: 8rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.3rem;
+  background: #006dff;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.4rem;
+  vertical-align: middle;
+}
+
+.windowpopup .input__form {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.windowpopup .input__form input[type='checkbox'], .windowpopup .input__form input[type='radio'] {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 0;
+  -webkit-appearance: none;
+  clip: rect(0, 0, 0, 0);
+}
+
+.windowpopup .input__form input[type='checkbox'] + label {
+  display: inline-block;
+  height: 3.5rem;
+  line-height: 3.4rem;
+  padding: 0 0 0 25px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background: url(../images/checkbox.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.windowpopup .input__form input[type='checkbox']:checked + label {
+  background: url(../images/checkbox_on.png) no-repeat left center;
+}
+
+.windowpopup .input__form input[type='radio'] + label {
+  display: inline-block;
+  height: 4rem;
+  line-height: 3.9rem;
+  padding: 0 0 0 25px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background: url(../images/radio.png) no-repeat left center;
+  cursor: pointer;
+}
+
+.windowpopup .input__form input[type='radio']:checked + label {
+  background: url(../images/radio_on.png) no-repeat left center;
+}
+
+.windowpopup .input__form input[type='text'], .windowpopup .input__form input[type='password'] {
+  height: 3.5rem;
+  line-height: 2.6rem;
+  padding: 0 0.3rem;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.windowpopup .input__form input[type='text'] {
+  width: 100%;
+}
+
+.windowpopup .input__form textarea {
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.windowpopup .input__form select {
+  width: 100%;
+  min-width: 12rem;
+  height: 3.5rem;
+  margin: 0;
+  padding: 0.5rem 2.5rem 0.6rem 1rem;
+  border: 1px solid #c9cdd3;
+  font-size: 1.2rem;
+  color: #8e8e8e;
+  font-weight: normal;
+  background: url(../images/select_bg.gif) 100% 50% no-repeat;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.windowpopup .input__form select::-ms-expand {
+  display: none;
+}
+
+.windowpopup .input__form.list {
+  background: #ffffff;
+  border: 0.1rem solid #c9cdd3;
+  padding: 0px;
+  margin-top: 1rem;
+  height: 12rem;
+  overflow-y: scroll;
+}
+
+.windowpopup .input__form.list h5 {
+  background: #e7ecf0;
+  padding: 1rem;
+  color: #6e8699;
+  font-size: 1.5rem;
+}
+
+.windowpopup .input__form.list ul {
+  padding: 0 1rem;
+}
+
+.windowpopup .input__form.list ul li {
+  overflow: hidden;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.1rem solid #eef3f5;
+  font-size: 1.3rem;
+  color: #6e8699;
+}
+
+.windowpopup .input__form.list ul li dt {
+  width: 10rem;
+  float: left;
+  margin-right: 1.5rem;
+  font-weight: 700;
+}
+
+.windowpopup .input__form.list ul li dd {
+  float: left;
+  width: calc(100% - 115px);
+  line-height: 130%;
+}
+
+.btnArea {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.btnArea a[class^='btn__'] {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btnArea a[class^='btn__'] + a[class^='btn__'] {
+  margin-left: 0.8rem;
+}
+
+.btnArea .btn {
+  font-size: 1.4rem;
+}
+
+.btnArea .btn__primary {
+  background: #6599f4;
+}
+
+.btnArea .btn__primary2 {
+  background: #006dff;
+}
+
+.btnArea .btn__cancle {
+  background: #9fa6ad;
+}
+
+.btnArea .small {
+  font-size: 1.3rem;
+}
+
+.btnArea .w100 {
+  width: 100%;
+}
+
+.btnArea.submit {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=windowpopup.css.map */

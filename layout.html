@@ -32,7 +32,7 @@
 
   <div class="right">
     <div class="right__header">
-      <span class="prTitle">스마트강원 통합플랫폼</span>
+      <span class="prTitle">SMART-i 통합플랫폼</span>
       <span class="pageTitle">종합정보</span>
 
       <ul class="topBtns">
@@ -49,15 +49,51 @@
 
     <div class="right__container">
 
-      <div class="coverLayer cameraList">
-        <div class="coverLayer__title">
-          <h2>주요관제카메라</h2>          
+      <div class="topSearch">
+        <div class="inputItem">          
+          <input type="text" placeholder="주소검색" id="text1">
         </div>
-        <div class="coverLayer__content">
-          
+        <div class="inputItem">
+          <div class="col2">
+            <select name="" id="" title="해당항목선택">
+              <option value="">카메라명</option>
+              <option value="">선택옵션1</option>
+              <option value="">선택옵션2</option>
+            </select>
+          </div>
+          <div class="col2">
+            <input type="text" id="text2">
+          </div>          
         </div>
-      </div> <!-- // coverLayer -->
-      
+        <div class="inputItem">               
+          <input type="text" placeholder="반경검색 값" id="text3">
+        </div>
+        <div class="inputItem">          
+          <!-- 사이즈 조절할땐 빈 div 사용-->
+        </div>
+        <div class="inputItem">          
+          <!-- 사이즈 조절할땐 빈 div 사용-->
+        </div>
+      </div><!-- // topSearch -->
+
+      <div class="floatSwitch">
+        <ul class="floatSwitch__list">
+          <li class="current"><a href=""><span class="icon icon01"></span><span class="text">카메라이동</span></a></li>
+          <li><a href=""><span class="icon icon02"></span><span class="text">거리측정</span></a></li>
+          <li><a href=""><span class="icon icon03"></span><span class="text">면적측정</span></a></li>
+          <li><a href=""><span class="icon icon04"></span><span class="text">Hybrid</span></a></li>
+          <li><a href=""><span class="icon icon05"></span><span class="text">Satellite</span></a></li>
+        </ul>
+      </div><!-- // floatSwitch -->
+
+      <div class="floatText">
+        <ul class="floatText__list">
+          <li><a href="#">카메라이동저장</a></li>
+          <li><a href="#">웹소켓저장</a></li>
+        </ul>
+      </div><!-- // floatText -->
+
+
       <div class="bottomPanel">
         <div class="camera">
           <span class="camera__name">[KS302] 속초톨게이트 상행 [KS302] 속초톨게이트 상행 [KS302] 속초톨게이트 상행</span><img src="images/video_img.png">
