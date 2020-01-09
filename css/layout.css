@@ -422,10 +422,10 @@ body {
   position: absolute;
   right: 1.5rem;
   /* top: 52rem; */
-  top: 24%;
+  bottom: 2rem;
   border-radius: 4px;
   border: 1px solid #2A2D2E;
-  width: 90px;
+  width: 9rem;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -441,7 +441,7 @@ body {
 .floatText__list li {
   border-bottom: 1px solid #3F4244;
   background: #303335;
-  padding: 5px 0px;
+  padding: 0.5rem 0px;
 }
 
 .floatText__list li a {
@@ -450,7 +450,7 @@ body {
   height: 100%;
   color: #565F65;
   letter-spacing: -1px;
-  font-size: 13px;
+  font-size: 1.3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -465,14 +465,14 @@ body {
   top: 5%;
   border-radius: 4px;
   border: 1px solid #2A2D2E;
-  width: 90px;
+  width: 9rem;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .floatSwitch__list li {
   width: 100%;
-  height: 80px;
+  height: 8rem;
   border-bottom: 1px solid #3F4244;
   background: #303335;
   text-align: center;
@@ -484,10 +484,10 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 1rem;
   color: #565F65;
   letter-spacing: -0.5px;
-  font-size: 13px;
+  font-size: 1.3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
@@ -495,13 +495,14 @@ body {
 
 .floatSwitch__list li .icon {
   display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto 10px;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
 }
 
 .floatSwitch__list li .icon01 {
   background: url("/images/floatswitch.png") left top no-repeat;
+  background-size: contain;
 }
 
 .floatSwitch__list li .icon02 {
@@ -597,6 +598,7 @@ body {
   border-radius: 3px;
   padding: 3px 8px;
   width: 100%;
+  font-size: 1.4rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -611,13 +613,14 @@ body {
 
 .topSearch .inputItem select {
   width: 100%;
+  height: 3rem;
   margin: 0;
   padding: 0.5rem 2.5rem 0.6rem 1rem;
   border: none;
   background: #ffffff;
   word-wrap: break-word;
   z-index: 10;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #8e8e8e;
   border-radius: 3px;
   font-weight: normal;
@@ -642,6 +645,101 @@ body {
 
 .topSearch .inputItem .col2 + .col2 {
   margin-left: 6px;
+}
+
+.leftFix {
+  position: absolute;
+  left: 0rem;
+  top: 5rem;
+  width: 35rem;
+  height: calc(100vh - 5rem);
+  padding: 2.5rem 1.5rem  1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(28, 32, 38, 0.9);
+  z-index: 999;
+}
+
+.leftFix__top {
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #4C5460;
+  color: #ffffff;
+}
+
+.leftFix__top h2 {
+  float: left;
+  color: #ffffff;
+}
+
+.leftFix__top h2 .depth1 {
+  display: block;
+  font-size: 2.2rem;
+  line-height: 0.9;
+}
+
+.leftFix__top h2 .depth2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.leftFix__top .fix {
+  float: right;
+}
+
+.leftFix__top .fix a {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #AEB5BB;
+}
+
+.leftFix__info h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #AEB5BB;
+  font-size: 2.2rem;
+}
+
+.leftFix__info .inFo__air {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.leftFix__info .inFo__air li {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  border: 1px solid #75797D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 2rem;
+}
+
+.leftFix__info .inFo__air li .figure {
+  float: right;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.leftFix__info .inFo__air li .figure.good {
+  color: #54A5F6;
+}
+
+.leftFix__info .inFo__air li .figure.normal {
+  color: #5FF12C;
+}
+
+.leftFix__info .inFo__air li .figure.bad {
+  color: #F1BC2C;
+}
+
+.leftFix__info .inFo__air li .figure.warn {
+  color: #EB4F4F;
+}
+
+.leftFix__info .inFo__air li + li {
+  margin-top: 2rem;
 }
 
 .inputItem + .inputItem {
